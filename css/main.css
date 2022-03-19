@@ -1,3 +1,24 @@
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/poppins-v19-latin-regular.woff2") format("woff2"), url("../fonts/poppins-v19-latin-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  src: local(""), url("../fonts/poppins-v19-latin-500.woff2") format("woff2"), url("../fonts/poppins-v19-latin-500.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 600;
+  src: local(""), url("../fonts/poppins-v19-latin-600italic.woff2") format("woff2"), url("../fonts/poppins-v19-latin-600italic.woff") format("woff");
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -376,5 +397,421 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   font-family: "Arial",sans-serif;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+.header {
+  margin-top: 20px;
+}
+
+.container__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.britlex {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  margin-left: 130px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__item {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #263238;
+}
+
+.nav__item:hover {
+  color: #263238;
+  opacity: 0.5;
+}
+
+.btn {
+  display: block;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  width: 136px;
+  height: 36px;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+  border: solid 1px black;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  color: #263238;
+  opacity: 0.5;
+}
+
+.burger {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .header {
+    margin-top: 20px;
+  }
+  .britlex {
+    margin-right: auto;
+    padding-left: 20px;
+  }
+  .nav__list {
+    display: none;
+  }
+  .btn {
+    display: none;
+  }
+  .burger {
+    display: block;
+    margin-right: 20px;
+  }
+}
+
+.hero__container {
+  background-image: url("./../../images/Learning languages-bro.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: right;
+}
+
+.learn__title {
+  width: 386px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 80px;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.text__learn {
+  width: 632px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #8F95A5;
+  margin: 0;
+  margin-bottom: 61px;
+}
+
+.learn__btn {
+  width: 292px;
+  background: #263238;
+  border-radius: 15px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 54px;
+  color: #FFFFFF;
+}
+
+@media only screen and (max-width: 767px) {
+  .hero__container {
+    background-image: url("./../../images/Learning languages-bro.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 400px 400px;
+  }
+  .learn__title {
+    width: 217px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 45px;
+    color: #000000;
+    margin-top: 64px;
+  }
+  .text__learn {
+    width: 360px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8F95A5;
+  }
+  .learn__btn {
+    width: 236px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+    background: #263238;
+    border-radius: 5px;
+    padding: 10px 50px;
+    margin-top: 54px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .hero__container {
+    background-image: url("./../../images/Learning languages-bro.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 424px 424px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: auto;
+  }
+  .learn__title {
+    width: 491px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 45px;
+    color: #000000;
+  }
+  .text__learn {
+    width: 632px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #8F95A5;
+  }
+}
+
+.skills .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  -webkit-column-gap: 17px;
+          column-gap: 17px;
+  row-gap: 20px;
+}
+
+.skills__heading {
+  text-align: center;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 80px;
+  color: #000000;
+}
+
+.skills__blocks {
+  max-width: 435px;
+  width: 100%;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+.skills__image--speaking {
+  margin-bottom: 30px;
+}
+
+.skills__speaking-heading {
+  margin: 0;
+  margin-bottom: 25px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 80px;
+  color: #263238;
+}
+
+.skills__paragraph {
+  margin-bottom: 35px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #8f95a5;
+}
+
+.common__btn {
+  width: 230px;
+  text-align: center;
+  padding: 18px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+  background: #263238;
+  border-radius: 5px;
+}
+
+.skills__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 18px;
+          column-gap: 18px;
+  row-gap: 20px;
+}
+
+.skills__listening {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 60px;
+          column-gap: 60px;
+  max-width: 885px;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.skills__listening .skills__image--speaking {
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 767px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  -webkit-column-gap: 17px;
+          column-gap: 17px;
+  row-gap: 20px;
+}
+
+.abut__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 386px;
+  margin-bottom: 200px;
+  background-image: url("./../../images/Business competition-bro png.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: right;
+  background-size: 500px;
+}
+
+.abaut__wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.abaut__title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 80px;
+  color: #000000;
+}
+
+.text__abaut {
+  width: 635px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #8F95A5;
+}
+
+.abut__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
 }
 /*# sourceMappingURL=main.css.map */

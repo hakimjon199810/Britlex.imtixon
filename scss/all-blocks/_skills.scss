@@ -1,0 +1,153 @@
+ .skills .container {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  column-gap: 17px;
+  row-gap: 20px;
+   }
+  
+  .skills__heading {
+    text-align: center;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 80px;
+    color: #000000;
+  }
+  
+  .skills__blocks {
+    max-width: 435px;
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 20px;
+  }
+  
+  .skills__image--speaking {
+    margin-bottom: 30px;
+  }
+  
+  .skills__speaking-heading {
+    margin: 0;
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 80px;
+    color: #263238;
+  }
+  
+  .skills__paragraph {
+    margin-bottom: 35px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8f95a5;
+  }
+  
+  .common__btn {
+    width: 230px;
+    text-align: center;
+    padding: 18px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #ffffff;
+    background: #263238;
+    border-radius: 5px;
+  }
+  
+  .skills__right {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 18px;
+    row-gap: 20px;
+  }
+  
+  .skills__listening{
+      display: flex;
+      column-gap: 60px;
+      max-width: 885px;
+      width: 100%;
+      padding-bottom: 20px;
+  }
+  
+  .skills__listening .skills__image--speaking{
+      margin-bottom: 0;
+  }
+
+  @media only screen and (max-width: 767px){
+    display: flex;{
+    max-width: 767px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    column-gap: 17px;
+    row-gap: 20px;
+  }
+  .skills__heading {
+    text-align: center;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 80px;
+    color: #000000;
+  }
+  
+  .skills__blocks {
+    max-width: 435px;
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 20px;
+  }
+  
+  .skills__image--speaking {
+    margin-bottom: 30px;
+  }
+  
+  .skills__speaking-heading {
+    margin: 0;
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 80px;
+    color: #263238;
+  }
+  
+  .skills__paragraph {
+    margin-bottom: 35px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8f95a5;
+  }
+  
+  .common__btn {
+    width: 230px;
+    text-align: center;
+    padding: 18px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #ffffff;
+    background: #263238;
+    border-radius: 5px;
+  }
+  
+  .skills__right {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 18px;
+    row-gap: 20px;
+  }
+  
+  .skills__listening{
+      display: flex;
+      column-gap: 60px;
+      max-width: 462px;
+      width: 100%;
+      padding-bottom: 20px;
+  }
+  
+  .skills__listening .skills__image--speaking{
+      margin-bottom: 0;
+  }
+  }
